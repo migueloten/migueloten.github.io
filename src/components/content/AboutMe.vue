@@ -2,11 +2,8 @@
   <v-container class="ma-0 pa-0">
     <div id="aboutMe" class="aboutMe">
       <div class="aboutMe__text">
-        <h3>
-          Olá, meu nome é<br />
-          <span>Severino Miguel.</span>
-        </h3>
-
+        <h3>Olá, meu nome é</h3>
+        <span>SEVERINO MIGUEL.</span>
         <h2>E eu gosto de criar aplicações para a web.</h2>
         <p>
           Ainda criança me tornei um entusiasta de tecnologia. Durante a
@@ -53,10 +50,11 @@ export default {
 
     h3 {
       font-size: 20px;
-      span {
-        font-size: 50px;
-        color: $sky-blue-crayola;
-      }
+    }
+
+    span {
+      font-size: 50px;
+      color: $sky-blue-crayola;
     }
 
     p {

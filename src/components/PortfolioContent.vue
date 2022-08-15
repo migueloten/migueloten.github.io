@@ -2,6 +2,7 @@
   <div class="content d-flex">
     <div class="content__base d-flex">
       <about-me />
+      <resume-cv />
     </div>
     <div class="d-none d-md-flex content__aside">
       <a href="https://www.linkedin.com/in/severino-miguel/" target="_blank"
@@ -30,9 +31,11 @@
 
 <script>
 import AboutMe from "./content/AboutMe.vue";
+import ResumeCv from "./content/ResumeCv.vue";
+
 export default {
   name: "PortfolioPage",
-  components: { AboutMe },
+  components: { AboutMe, ResumeCv },
 };
 </script>
 
@@ -41,6 +44,11 @@ export default {
 
 .content {
   justify-content: space-evenly;
+
+  &__base {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__aside {
     position: fixed;
@@ -53,13 +61,6 @@ export default {
     justify-content: center;
 
     a {
-      text-decoration: none;
-      color: $cultured;
-
-      &:hover {
-        color: $sky-blue-crayola;
-      }
-
       .v-icon {
         margin-top: 25px;
       }

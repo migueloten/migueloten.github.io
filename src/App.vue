@@ -42,7 +42,12 @@ body {
   color: $cultured;
 
   a {
-    color: $sky-blue-crayola;
+    color: $cultured;
+    text-decoration: none;
+
+    &:hover {
+      color: $sky-blue-crayola;
+    }
   }
 }
 </style>

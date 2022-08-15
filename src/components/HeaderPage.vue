@@ -57,7 +57,7 @@ export default {
       drawer: null,
       items: [
         { title: "Sobre mim", href: "#aboutMe", icon: "account" },
-        { title: "Currículo", href: "#resume", icon: "file-account" },
+        { title: "Currículo", href: "#resumeCv", icon: "file-account" },
         { title: "Repositórios", href: "#repositories", icon: "github" },
         { title: "Contato", href: "#contact", icon: "email" },
       ],
@@ -127,13 +127,7 @@ export default {
       font-size: 0.8rem;
 
       a {
-        color: $light-gray;
-        text-decoration: none;
         font-size: 0.8rem;
-
-        &:hover {
-          color: $sky-blue-crayola;
-        }
       }
     }
   }
@@ -163,15 +157,6 @@ export default {
 
         .v-icon {
           font-size: 1.8rem;
-        }
-
-        a {
-          color: $light-gray;
-          text-decoration: none;
-
-          &:hover {
-            color: $sky-blue-crayola;
-          }
         }
       }
     }
